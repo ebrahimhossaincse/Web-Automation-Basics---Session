@@ -24,7 +24,6 @@ public class AssertionExamples {
     //@Test
     public void hardAssertion() throws InterruptedException {
         driver.get("https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php");
-        Thread.sleep(2000);
         String expected_Title = "Selenium Practice - Student Registration For";
         String actual_title = driver.getTitle();
         Assert.assertEquals(actual_title, expected_Title);
